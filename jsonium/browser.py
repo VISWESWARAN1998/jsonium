@@ -12,9 +12,3 @@ class Browser:
     @staticmethod
     def instance() -> WebDriver:
         return BROWSER
-    
-    def get_memory(self) -> dict:
-        return MEMORY
-    
-    def set_memory(self, new_memory: dict) -> None:
-        MEMORY = new_memory
