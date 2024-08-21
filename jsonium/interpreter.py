@@ -5,6 +5,7 @@ from .rules.rule import Rule
 from .actions.get_action import get_action
 from .element import Element
 from .variable import Variable
+from .consumer import Consumer
 
 class Interpreter:
 
@@ -18,6 +19,9 @@ class Interpreter:
             elif rule_type == Rule.ELEMENT:
                 element = Element(locater=rule["locater"], by=rule["by"])
                 Variable.add_variable(rule["var"], element.get_element())
+            elif rule_type == Rule.CONSUMER:
+                consumer = Consumer(rule=rule)
+                consumer.process_consumer()
 
 
     def interpret_rules_from_file(self, file_path: str):

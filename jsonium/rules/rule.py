@@ -4,3 +4,4 @@ class Rule:
     
     ACTION = "action"
     ELEMENT = "element"
+    CONSUMER = "consumer"
