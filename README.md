@@ -1,6 +1,12 @@
 # Jsonium
 Have you ever worked with selenium and felt the need of constantly changing the program just because a selection or xpath is changed? Well, I have came up with a solution on completely automating the selenium using JSON.
 
+# Components of Jsonium
+Jsonium consists of 5 main components each representing human interactions with browser. The 5 componetns are explained below.
+
+![](https://i.imgur.com/JPt1ceD.png)
+
+
 The Python code doesn't have to be modified for website changes as we will be completely automating including the logic with JSON. 
 
 The Python code will take the rules from json file named rules.json
